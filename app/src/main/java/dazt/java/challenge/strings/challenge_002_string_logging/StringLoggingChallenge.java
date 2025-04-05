@@ -1,4 +1,4 @@
-package dazt.java.challenge.challenge_002_string_logging;
+package dazt.java.challenge.strings.challenge_002_string_logging;
 
 import dazt.java.challenge.helpers.*;
 import org.junit.jupiter.api.*;
