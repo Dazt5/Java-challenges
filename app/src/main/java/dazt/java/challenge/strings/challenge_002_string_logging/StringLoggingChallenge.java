@@ -43,21 +43,12 @@ public class StringLoggingChallenge {
      * Tip: usar los métodos, split, replace, trim y cualquier otro de la clase String.
      */
     public static String getLogLevel(final String log) {
-        String logName = "";
-        String [] errores = {"[ERROR]","[DEBUG]","[WARNING]", "[INFO]"};
+        return log.split(" ")[1];
 
-        for (String nombreError: errores){
-            if(log.contains(nombreError)){
-                logName = nombreError;
-            }
-        }
-        return logName;
     }
 
     public static String getLogMessage(final String log) {
-        String logMessage= "";
-        logMessage= log.substring(log.indexOf("]") + 1, log.length());
-        return logMessage.trim();
+        return log.replace(log.split(" ")[0],"")
+                    .replace(log.split(" ")[1],"").trim();
     }
-
 }
