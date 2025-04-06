@@ -23,7 +23,7 @@ public class TryCatchChallenge {
      * 2. Debe mostrar un mensaje diciendo cuál es el error de forma dinámica, no puede ser un mensaje particular creado por el developer.
      * 3. Se deben procesar todos los usuarios, haya habido errores o no.
      * 4. Se debe mostrar un mensaje al final diciendo "Validación para usuario x finalizada", en donde x debe ser el nombre del usuario, haya habido errores en la validación o no.
-     * 5. Además, necesito saber por qué mi código actual está fallando
+     * 5. Además, necesito saber por qué mi código actual está fallando.
      */
 
     public static void main(final String[] args) {
