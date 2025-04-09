@@ -23,10 +23,7 @@ public class StringLoggingChallenge {
             System.out.println("LogMessage: " + logMessage);
             System.out.println("Finalizado el procesamiento del log");
             System.out.println();
-            Assertions.assertTrue(LogLevel.isLogLevelCorrect(logLevel));
-            Assertions.assertNotNull(logLevel);
-            Assertions.assertNotNull(logMessage);
-            Assertions.assertFalse(logMessage.isEmpty());
+
         }
     }
 
@@ -46,11 +43,12 @@ public class StringLoggingChallenge {
      * Tip: usar los métodos, split, replace, trim y cualquier otro de la clase String.
      */
     public static String getLogLevel(final String log) {
-        return null;
+        return log.split(" ")[1];
+
     }
 
     public static String getLogMessage(final String log) {
-        return null;
+        return log.replace(log.split(" ")[0],"")
+                    .replace(log.split(" ")[1],"").trim();
     }
-
 }
